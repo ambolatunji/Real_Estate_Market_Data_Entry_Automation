@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
 # Set up WebDriver (Download ChromeDriver and set path accordingly)
-service = Service("chromedriver.exe")  # Update this path
+service = Service("chromedriver-win64\chromedriver.exe")  # path to driver executable
 driver = webdriver.Chrome(service=service)
 
 def scrape_zillow():
