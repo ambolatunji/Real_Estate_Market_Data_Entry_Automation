@@ -10,7 +10,7 @@ service = Service("chromedriver-win64\chromedriver.exe")  # path to driver execu
 driver = webdriver.Chrome(service=service)
 
 def scrape_zillow():
-    url = "https://www.zillow.com/homes/for_sale/"
+    url = "https://www.zillow.com/new-york-ny/fsbo/"
     driver.get(url)
     time.sleep(5)  # Allow page to load
 
